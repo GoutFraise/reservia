@@ -1,0 +1,45 @@
+body{
+    padding: 0;
+    margin:0;
+
+}
+#bandeau{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+#bandeau img{
+    padding: 10px;
+    width: 100px;
+    height: fit-content;
+    
+}
+li a {
+    text-decoration: none;
+    color: black;
+    font-weight:200;
+    
+}
+#bandeau div nav ul{
+    list-style-type: none;
+    display: flex;
+    color: blue;
+    font-weight: bold;
+    height: fit-content;
+    padding: 0;
+    margin: 0;
+}
+#bandeau div nav ul li:hover{
+    border-top:2px blue solid 
+    
+}
+li{
+    padding: 20px;
+}
+
+div{
+    padding: 0;
+    margin: 0;
+}
