@@ -1,8 +1,24 @@
+html{
+    font-family: 'Raleway' sans-serif;
+}
 body{
     padding: 0;
     margin:0;
 
 }
+
+
+
+/*HEADER DEBUT */
+h1{
+
+    font-size:28px;
+}
+header{
+    margin: 40px;
+    margin-top: 0;
+}
+
 #bandeau{
     display: flex;
     justify-content: space-between;
@@ -11,7 +27,7 @@ body{
     margin: 0;
 }
 #bandeau img{
-    padding: 10px;
+    padding-left: 10px;
     width: 100px;
     height: fit-content;
     
@@ -21,25 +37,95 @@ li a {
     color: black;
     font-weight:200;
     
+    
+    
 }
 #bandeau div nav ul{
     list-style-type: none;
     display: flex;
-    color: blue;
+    color: #0065FC;
     font-weight: bold;
-    height: fit-content;
     padding: 0;
     margin: 0;
+    margin-right: 20px;
+    
 }
 #bandeau div nav ul li:hover{
-    border-top:2px blue solid 
+    border-top:2px #0065FC solid ;
+    
     
 }
 li{
     padding: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+    
+    
+
 }
 
-div{
+#recherche{
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #F2F2F2;/**/
+    border-radius: 10px;
+    width: fit-content;
+    margin-bottom: 30px;
+}
+#recherche i {
+    border: 0;
+    padding:10px;
+    margin: 0;
+    
+
+}
+#recherche [type="text"]{
+    border: 0;
+    padding: 1%;
+    margin: 0%;
+    height: 80%;
+}
+#recherche [type="submit"]{
+    height: 100%;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #0065FC;
+}
+#filtre span i ,#filtre span p, #filtre p{
+    display: inline;
+}
+#filtre{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+#filtre span{
+    display: flex;
+    align-items:center;
+    background-color: #FFFFFF;
+   
+    border-radius: 100px;
+    border:2PX SOLID #F2F2F2;
     padding: 0;
     margin: 0;
 }
+#filtre span i{
+    color: #0065FC;
+    background-color: #a3c8ff;
+    margin: 0;
+    padding: 15px;
+    margin-right: 20px;
+    border-radius: 1000px;
+}
+#filtre span p{
+    margin-right: 20px;
+}
+
+
+/*HEARDER FIN*/
