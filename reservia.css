@@ -1,14 +1,9 @@
-html{
-    font-family: 'Raleway' sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway';
 }
-body{
-    padding:0;
-    margin:0;
-    
-}
-
-
-
 /*HEADER DEBUT */
 h1{
     margin: 0;
@@ -109,7 +104,7 @@ li{
     align-items: center;
     gap: 20px;
 }
-#filtre span{
+#filtre>span{
     display: flex;
     align-items:center;
     background-color: #FFFFFF;
@@ -127,8 +122,8 @@ li{
     margin-right: 20px;
     border-radius: 1000px;
 }
-#filtre span p{
-    margin-right: 20px;
+#filtre span span{
+    padding-right: 20px;
 }
 
 #filtre>p{
@@ -136,8 +131,10 @@ li{
     font-weight: 600;
 }
 header>i{
+
+    display: block;
     width: 16px;
-    padding: 5px;
+    padding: 5px 15px 5px 12px;
     text-align: center;
     color: #0065FC;
     background-color:white;
@@ -150,11 +147,22 @@ header>p{
     margin-left: 10px;
 }
 /*HEARDER FIN*/
+
+
+
+
+/*section hebergement */
+
 #hebergement{
+    width: 60%;
     background-color: #F2F2F2;
     padding: 30px;
     margin: 45px;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
     
     
     
@@ -165,30 +173,204 @@ header>p{
 .pasetoile{
     color: #F2F2F2;
 }
-.article{
-    
-    width: 25%;
+#hebergement .marseille .article{
+    width: 32%;
     position: relative;
     border-radius: 20px;
     overflow: hidden;
-    border: 10px solid white;
+    border: 5px solid white;
+    margin: 20px 0;
+    height: 25vh;
 }
-.article img{
+#hebergement .marseille .article img{
     width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15vh;
 }
-.bandabso{
+#hebergement .marseille .bandabso{
+    padding: 10px;
     font-size: 0.8em;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     width: 100%;
     bottom: 0;
     left: 0;
     position: absolute;
     background-color: #FFFFFF;
+    gap: 20px;
 }
-#marseille{
+#hebergement .marseille{
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 1.5%;
+}
+
+/*section populaire */
+#populaire{
+    width: 30%;
+    background-color: #F2F2F2;
+    padding: 30px;
+    margin: 45px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+#populaire .marseille{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1.5%;
+}
+#populaire>span>h2{
+    display: inline;
+}
+#populaire>span{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+#populaire .article img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 15vh;
+
+}
+#populaire .article{
+    width: 100%;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 5px solid white;
+    margin: 20px 0;
+    height: 15vh;
+}
+#populaire #titrepop{
+    display: flex;
+    justify-content: space-between;
+}
+#populaire .bandabso{
+    padding: 10px;
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background-color: #FFFFFF;
+    gap: 20px;
+    height: 15vh;
+}
+#premieresection{
+    display: flex;
+
+}
+.Afficherplus{
+    font-weight: 900;
+}
+/*activiter*/
+
+
+
+#activite{
+    display: flex;
+    flex-direction: column;
+    padding: 45px;
+}
+#activite>h2{
+    margin: 20px 0;
+}
+#listactivite{
+    display: grid;
+    grid-template-areas: /**/
+        "a b d e"
+        "a c d f";
+    gap: 2vh;
+}
+.activite{
+    position: relative;
+    box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    height: 25vh;
+}
+.activite img{
+    object-fit: cover;
+    width: 100%;
+    height: 25vh;
+
+  
+}
+.activite h3{
+    position: absolute;
+    background-color: white;
+    z-index: 100;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+}
+#article-1 img , #article-4 img{
+    height: 52vh;
+}
+#article-1{
+    grid-area: a ;
+    height: 52vh;
+}
+#article-2{
+    grid-area: b ;
+    
+}
+#article-3{
+    grid-area: c ;
+    
+}
+#article-4{
+    grid-area: d ;
+    height: 52vh;
+    
+}
+#article-5{
+    grid-area: e ;
+    
+}
+#article-6{
+    grid-area: f ;
+    
+}
+/*activiter fin*/ 
+
+
+/*footer*/
+footer{
+    width: 100%;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: start;
+    padding-left: 45px;
+    padding-top: 45px;
+    gap: 35vh;
+
+}
+footer h2{
+    padding:0 0 20px 0;
+
+
+}
+footer span{
+    padding:0 0 15px 0;
+    
+
+
+}
+footer div{
+    display: flex;
+    flex-direction: column;
+    
 }
