@@ -1,10 +1,4 @@
 @media (min-width: 630px){
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Raleway';
-}
 /*HEADER DEBUT */
 h1{
     margin: 0;
@@ -265,9 +259,7 @@ header>p{
 }
 #listactivite{
     display: grid;
-    grid-template-areas: /**/
-        "a b d e"
-        "a c d f";
+    grid-template-areas:"a b d e" "a c d f";
     gap: 2vh;
 }
 .activite{
@@ -297,31 +289,12 @@ header>p{
     grid-area: a ;
     height: 52vh;
 }
-#article-2{
-    grid-area: b ;
-}
-#article-3{
-    grid-area: c ;
-}
 #article-4{
-    grid-area: d ;
     height: 52vh;
-}
-#article-5{
-    grid-area: e ;
-    
-}
-#article-6{
-    grid-area: f ; 
 }
 /*activiter fin*/ 
 /*footer*/
 footer{
-    width: 100%;
-    background-color: #F2F2F2;
-    display: flex;
-    justify-content: start;
-    padding-left: 45px;
     padding-top: 45px;
     gap: 35vh;
 }
@@ -337,12 +310,7 @@ footer div{
 }
 }
 @media (min-width: 0px) and (max-width: 629px){
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Raleway';
-    }
+    
     /*HEADER DEBUT */
     h1{
         margin: 20px 30px;
@@ -630,13 +598,7 @@ footer div{
     }
     #listactivite{
         display: grid;
-        grid-template-areas: /**/
-            "a"
-            "b"
-            "c"
-            "d"
-            "e"
-            "f";
+        grid-template-areas:"a" "b" "c" "d" "e" "f";
         gap: 2vh;
     }
     .activite{
@@ -659,42 +621,52 @@ footer div{
         width: 100%;
         padding: 10px;
     }
-    #article-1{
-        grid-area: a ;
-    }
-    #article-2{
-      grid-area: b ;  
-    }
-    #article-3{
-        grid-area: c ; 
-    }
-    #article-4{
-        grid-area: d ;   
-    }
-    #article-5{
-        grid-area: e ;    
-    }
-    #article-6{
-        grid-area: f ;  
-    }
     /*activiter fin*/ 
     /*footer*/
     footer{
-        width: 100%;
-        background-color: #F2F2F2;
-        display: flex;
         flex-direction: column;
-        justify-content: start;
-        padding-left: 45px;
     }
     footer h2{
         padding:45px 0 20px 0;
     }
-    footer span{
-        padding:0 0 15px 0;
-    }
-    footer div{
-        display: flex;
-        flex-direction: column;
-    }
-    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway';
+}
+/*factorisation*/
+#article-1{
+    grid-area: a ;
+}
+#article-2{
+    grid-area: b ;  
+}
+#article-3{
+    grid-area: c ; 
+}
+#article-4{
+    grid-area: d ;   
+}
+#article-5{
+    grid-area: e ;    
+}
+#article-6{
+    grid-area: f ;  
+}
+footer{
+    width: 100%;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: start;
+    padding-left: 45px;
+}
+footer span{
+    padding:0 0 15px 0;
+}
+footer div{
+    display: flex;
+    flex-direction: column;
+}
