@@ -9,190 +9,33 @@ h1{
 header{
     margin: 0 50px;
 }
-#bandeau{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-}
-#bandeau img{
-    width: 100px;
-    height: fit-content;
-}
-li a {
-    text-decoration: none;
-    color: black;
-    font-weight:200;
-}
-#bandeau div nav ul{
-    list-style-type: none;
-    display: flex;
-    color: #0065FC;
-    font-weight: bold;
-    padding: 0;
-    margin: 0;
-    margin-right: 20px;
-    
-}
 #bandeau div nav ul li:hover{
     border-top:2px #0065FC solid ; 
 }
 #bandeau div nav ul #inscription:hover{
     border-top:2px white solid ;
 }
-li{
-    padding: 20px;
-    margin-right: 20px;
-    font-size: 20px;
-}
 #recherche{
-    height: 40px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: #F2F2F2;/**/
-    border-radius: 10px;
-    width: fit-content;
     margin: 30px 0;
-}
-#recherche i {
-    border: 0;
-    padding:10px;
-    margin: 0;
-    
-
-}
-#recherche [type="text"]{
-    border: 0;
-    padding: 1%;
-    margin: 0%;
-    height: 80%;
-}
-#recherche [type="submit"]{
-    height: 100%;
-    border: 0;
-    padding: 10px;
-    margin: 0;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    background-color: #0065FC;
-    color: white;
-    font-weight: 600;
-}
-#filtre span i ,#filtre span p, #filtre p{
-    display: inline;
-}
-#filtre{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-#filtre>span{
-    display: flex;
-    align-items:center;
-    background-color: #FFFFFF;
-   
-    border-radius: 100px;
-    border:2PX SOLID #F2F2F2;
-    padding: 0;
-    margin: 0;
-}
-#filtre span i{
-    color: #0065FC;
-    background-color: #a3c8ff;
-    margin: 0;
-    padding: 15px;
-    margin-right: 20px;
-    border-radius: 1000px;
-}
-#filtre span span{
-    padding-right: 20px;
-}
-
-#filtre>p{
-    font-size: 20px;
-    font-weight: 600;
 }
 header>i{
     margin-top: 20px;
-    display: block;
-    width: 16px;
-    padding: 5px 15px 5px 12px;
-    text-align: center;
-    color: #0065FC;
-    background-color:white;
-    
-    border: 2px solid #F2F2F2;
-    border-radius: 50px;
-}
-header>p{
-    display: inline;
-    margin-left: 10px;
 }
 /*HEARDER FIN*/
 /*section hebergement */
 #hebergement{
     width: 60%;
     background-color: #F2F2F2;
-    padding: 30px;
     margin: 45px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.etoile{
-    color: #0065FC;
-}
-.pasetoile{
-    color: #F2F2F2;
 }
 #hebergement .marseille .article{
     width: 32%;
-    position: relative;
-    border-radius: 20px;
-    overflow: hidden;
-    border: 5px solid white;
-    margin: 20px 0;
-    height: 25vh;
-}
-#hebergement .marseille .article img{
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 15vh;
-}
-#hebergement .marseille .bandabso{
-    padding: 10px;
-    font-size: 0.8em;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    background-color: #FFFFFF;
-    gap: 20px;
-}
-#hebergement .marseille{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5%;
 }
 /*section populaire */
 #populaire{
     width: 30%;
-    background-color: #F2F2F2;
-    padding: 30px;
     margin: 45px;
     border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 #populaire .marseille{
     display: flex;
@@ -203,84 +46,9 @@ header>p{
 #populaire>span>h2{
     display: inline;
 }
-#populaire>span{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-}
-#populaire .article img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 30%;
-    height: 15vh;
-}
-#populaire .article{
-    width: 100%;
-    position: relative;
-    border-radius: 20px;
-    overflow: hidden;
-    border: 5px solid white;
-    margin: 20px 0;
-    height: 15vh;
-}
-#populaire #titrepop{
-    display: flex;
-    justify-content: space-between;
-}
-#populaire .bandabso{
-    padding: 10px;
-    font-size: 0.8em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 70%;
-    top: 0;
-    right: 0;
-    position: absolute;
-    background-color: #FFFFFF;
-    gap: 20px;
-    height: 15vh;
-}
-#premieresection{
-    display: flex;
-}
-.Afficherplus{
-    font-weight: 900;
-}
 /*activiter*/
-#activite{
-    display: flex;
-    flex-direction: column;
-    padding: 45px;
-}
-#activite>h2{
-    margin: 20px 0;
-}
 #listactivite{
-    display: grid;
     grid-template-areas:"a b d e" "a c d f";
-    gap: 2vh;
-}
-.activite{
-    position: relative;
-    box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
-    overflow: hidden;
-    height: 25vh;
-}
-.activite img{
-    object-fit: cover;
-    width: 100%;
-    height: 25vh;
-}
-.activite h3{
-    position: absolute;
-    background-color: white;
-    z-index: 100;
-    bottom: 0;
-    width: 100%;
-    padding: 10px;
 }
 #article-1 img , #article-4 img{
     height: 52vh;
@@ -310,30 +78,9 @@ footer div{
 }
 }
 @media (min-width: 0px) and (max-width: 629px){
-    
     /*HEADER DEBUT */
-    h1{
-        margin: 20px 30px;
-        font-size:25px;
-        margin-bottom: 10px;
-    }
     #uh1, h1 , #recherche, #filtre, header>p,header>i{
         margin: 20px 0px 20px 30px;
-    }
-    #bandeau{
-        display: flex;
-        position: relative;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        height: 20vh;
-        border-bottom: 2px solid #F2F2F2;
-    }
-    #menubas{
-        align-self: flex-end;
     }
     #inscription{
         position: absolute;
@@ -342,9 +89,22 @@ footer div{
         text-align: center;
         margin: 20px;
     }
+    #menubas{
+        align-self: flex-end;
+    }
+    h1{
+        margin: 20px 30px;
+        font-size:25px;
+        margin-bottom: 10px;
+    }
+    #bandeau{
+        position: relative;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 20vh;
+        border-bottom: 2px solid #F2F2F2;
+    }
     #bandeau img{
-        width: 100px;
-        height: fit-content;
         position: absolute;
         top: 0;
         left: 0;
@@ -365,261 +125,37 @@ footer div{
         right: 0;
         width: 50%;
     }
-    li a {
-        text-decoration: none;
-        color: black;
-        font-weight:200;
-    }
-    #bandeau div nav ul{
-        list-style-type: none;
-        display: flex;
-        color: #0065FC;
-        font-weight: bold;
-        padding: 0;
-        margin: 0;
-        margin-right: 20px;
-    }
     #bandeau div nav ul li:hover{
         border-bottom:2px #0065FC solid ;
     }
     #bandeau div nav ul #inscription:hover{
         border-bottom:2px white solid ;
     }
-    li{
-        padding: 20px;
-        margin-right: 20px;
-        font-size: 20px;
-    }
-    #recherche{
-        height: 40px;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        background-color: #F2F2F2;/**/
-        border-radius: 10px;
-        width: fit-content;
-    }
-    #recherche i {
-        border: 0;
-        padding:10px;
-        margin: 0;
-    }
-    #recherche [type="text"]{
-        border: 0;
-        padding: 1%;
-        margin: 0%;
-        height: 80%;
-    }
-    #recherche [type="submit"]{
-        height: 100%;
-        border: 0;
-        padding: 10px;
-        margin: 0;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-        background-color: #0065FC;
-        color: white;
-        font-weight: 600;
-    }
-    #filtre span i ,#filtre span p, #filtre p{
-        display: inline;
-    }
-    #filtre{
-        display: flex;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        align-items: center;
-        gap: 20px;
-    }
-    #filtre>span{
-        display: flex;
-        align-items:center;
-        background-color: #FFFFFF;
-        border-radius: 100px;
-        border:2PX SOLID #F2F2F2;
-        padding: 0;
-        margin: 0;
-    }
-    #filtre span i{
-        color: #0065FC;
-        background-color: #a3c8ff;
-        margin: 0;
-        padding: 15px;
-        margin-right: 20px;
-        border-radius: 1000px;
-    }
-    #filtre span span{
-        padding-right: 20px;
-    }
     #filtre>p{
         display: block;
         width:100% ;
-        font-size: 20px;
-        font-weight: 600;
-    }
-    header>i{
-        width: 16px;
-        padding: 5px 15px 5px 12px;
-        text-align: center;
-        color: #0065FC;
-        background-color:white;
-        border: 2px solid #F2F2F2;
-        border-radius: 50px;
-    }
-    header>p{
-        display: inline;
-        margin-left: 10px;
     }
     /*HEARDER FIN*/
     /*section hebergement */
     #hebergement{
         width: 100%;
         background-color: white;
-        padding: 30px;
-        border-radius: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .etoile{
-        color: #0065FC;
-    }
-    .pasetoile{
-        color: #F2F2F2;
     }
     #hebergement .marseille .article{
         width: 100%;
-        position: relative;
-        border-radius: 20px;
-        overflow: hidden;
-        border: 5px solid white;
-        margin: 20px 0;
-        height: 25vh;
         box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.1);
-    }
-    #hebergement .marseille .article img{
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 15vh;
-    }
-    #hebergement .marseille .bandabso{
-        padding: 10px;
-        font-size: 0.8em;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        bottom: 0;
-        left: 0;
-        position: absolute;
-        background-color: #FFFFFF;
-        gap: 20px;
-    }
-    #hebergement .marseille{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1.5%;
     }
     /*section populaire */
     #populaire{
         margin-top: 20px;
         width: 100%;
-        background-color: #F2F2F2;
-        padding: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    
-    }
-    #populaire .marseille{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        gap: 1.5%;
-    }
-    #populaire>span>h2{
-        display: inline;
-    }
-    #populaire>span{
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-    }
-    #populaire .article img{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 30%;
-        height: 15vh;
-    }
-    #populaire .article{
-        width: 100%;
-        position: relative;
-        border-radius: 20px;
-        overflow: hidden;
-        border: 5px solid white;
-        margin: 20px 0;
-        height: 15vh;
-    }
-    #populaire #titrepop{
-        display: flex;
-        justify-content: space-between;
-    }
-    #populaire .bandabso{
-        padding: 10px;
-        font-size: 0.8em;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 70%;
-        top: 0;
-        right: 0;
-        position: absolute;
-        background-color: #FFFFFF;
-        gap: 20px;
-        height: 15vh;
     }
     #premieresection{
-        display: flex;
         flex-direction: column-reverse;
     }
-    .Afficherplus{
-        font-weight: 900;
-    }
     /*activiter*/
-    #activite{
-        display: flex;
-        flex-direction: column;
-        padding: 45px;
-    }
-    #activite>h2{
-        margin: 20px 0;
-    }
     #listactivite{
-        display: grid;
         grid-template-areas:"a" "b" "c" "d" "e" "f";
-        gap: 2vh;
-    }
-    .activite{
-        position: relative;
-        box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.1);
-        border-radius: 20px;
-        overflow: hidden;
-        height: 25vh;
-    }
-    .activite img{
-        object-fit: cover;
-        width: 100%;
-        height: 25vh; 
-    }
-    .activite h3{
-        position: absolute;
-        background-color: white;
-        z-index: 100;
-        bottom: 0;
-        width: 100%;
-        padding: 10px;
     }
     /*activiter fin*/ 
     /*footer*/
@@ -630,7 +166,6 @@ footer div{
         padding:45px 0 20px 0;
     }
 }
-
 * {
     margin: 0;
     padding: 0;
@@ -669,4 +204,239 @@ footer span{
 footer div{
     display: flex;
     flex-direction: column;
+}
+#activite{
+    display: flex;
+    flex-direction: column;
+    padding: 45px;
+}
+#activite>h2{
+    margin: 20px 0;
+}
+#listactivite{
+    display: grid;
+    gap: 2vh;
+}
+.activite{
+    position: relative;
+    box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    height: 25vh;
+}
+.activite img{
+    object-fit: cover;
+    width: 100%;
+    height: 25vh; 
+}
+.activite h3{
+    position: absolute;
+    background-color: white;
+    z-index: 100;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+}
+#premieresection{
+    display: flex;
+}
+.Afficherplus{
+    font-weight: 900;
+}
+#populaire #titrepop{
+    display: flex;
+    justify-content: space-between;
+}
+#populaire .bandabso{
+    padding: 10px;
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background-color: #FFFFFF;
+    gap: 20px;
+    height: 15vh;
+}
+#populaire>span{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+#populaire .article img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 15vh;
+}
+#populaire .article{
+    width: 100%;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 5px solid white;
+    margin: 20px 0;
+    height: 15vh;
+} 
+#populaire .marseille{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1.5%;
+}
+#populaire>span>h2{
+    display: inline;
+} 
+#populaire{
+    background-color: #F2F2F2;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#hebergement .marseille .article img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15vh;
+}
+#hebergement .marseille .bandabso{
+    padding: 10px;
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-color: #FFFFFF;
+    gap: 20px;
+}
+#hebergement .marseille{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5%;
+}
+#hebergement{
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.etoile{
+    color: #0065FC;
+}
+.pasetoile{
+    color: #F2F2F2;
+}
+#hebergement .marseille .article{
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 5px solid white;
+    margin: 20px 0;
+    height: 25vh;
+}
+#filtre span span{
+    padding-right: 20px;
+}
+#filtre>p{
+    font-size: 20px;
+    font-weight: 600;
+}
+header>i{
+    width: 16px;
+    padding: 5px 15px 5px 12px;
+    text-align: center;
+    color: #0065FC;
+    background-color:white;
+    border: 2px solid #F2F2F2;
+    border-radius: 50px;
+}
+header>p{
+    display: inline;
+    margin-left: 10px;
+}
+#filtre span i ,#filtre span p, #filtre p{
+    display: inline;
+}
+#filtre{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+#filtre>span{
+    display: flex;
+    align-items:center;
+    background-color: #FFFFFF;
+    border-radius: 100px;
+    border:2PX SOLID #F2F2F2;
+}
+#filtre span i{
+    color: #0065FC;
+    background-color: #a3c8ff;
+    padding: 15px;
+    margin-right: 20px;
+    border-radius: 1000px;
+}
+#recherche i {
+    padding:10px;
+}
+#recherche [type="text"]{
+    border: 0;
+    padding: 1%;
+    height: 80%;
+}
+#recherche [type="submit"]{
+    height: 100%;
+    border: 0;
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #0065FC;
+    color: white;
+    font-weight: 600;
+}
+li{
+    padding: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+#recherche{
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    width: fit-content;
+}
+li a {
+    text-decoration: none;
+    color: black;
+    font-weight:200;
+}
+#bandeau div nav ul{
+    list-style-type: none;
+    display: flex;
+    color: #0065FC;
+    font-weight: bold;
+    margin-right: 20px;
+}
+#bandeau{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#bandeau img{
+    width: 100px;
+    height: fit-content;
 }
