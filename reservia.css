@@ -166,13 +166,13 @@ footer div{
         padding:45px 0 20px 0;
     }
 }
+/*factorisation*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Raleway';
 }
-/*factorisation*/
 #article-1{
     grid-area: a ;
 }
